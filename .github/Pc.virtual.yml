@@ -1,0 +1,46 @@
+name: PC Virtual Cloud
+run-name: 🖥️ PC Virtual sendo iniciado por ${{ github.actor }}
+
+on:
+  push:
+    paths:
+      - 'pc-virtual.yml'
+  workflow_dispatch:
+
+jobs:
+  iniciar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    
+    steps:
+      - name: 📂 Carregando sistema
+        uses: actions/checkout@v4
+      
+      - name: ⚙️ Especificações do Sistema
+        run: |
+          echo "=========================================="
+          echo "        💻 PC VIRTUAL NA NUVEM"
+          echo "=========================================="
+          echo "🖥️ Sistema: Windows 10 / Android 9.0"
+          echo "🧠 Memória RAM: 4096 MB"
+          echo "⚡ Processador: 4 Núcleos"
+          echo "💾 Armazenamento: 64 GB"
+          echo "📐 Resolução: 1280 x 720"
+          echo "🎨 DPI: 320"
+          echo "🌐 Rede: Compartilhada"
+          echo "=========================================="
+      
+      - name: 🔧 Inicializando Serviços
+        run: |
+          echo "✅ Rede conectada"
+          echo "✅ Memória alocada"
+          echo "✅ Armazenamento montado"
+          echo "✅ Sistema operacional carregado"
+      
+      - name: ✅ Pronto para uso
+        run: |
+          echo "=========================================="
+          echo "      🎉 PC VIRTUAL ONLINE!"
+          echo "=========================================="
+          echo "Status: ✅ ATIVO"
+          echo "Pronto para começar a usar!"
